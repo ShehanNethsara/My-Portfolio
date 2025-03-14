@@ -172,6 +172,71 @@ body{
     margin-left: 40%;
 }
 
+.myworks{
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+
+
+}
+
+.myworks>div{
+
+    width: 20vw;
+    height: 350px;
+
+    background: white;
+    border-radius: 20px;
+
+    margin: 32px 32px 32px 32px;
+
+
+}
+
+.myworks>div h3{
+    position: relative;
+    top: 10px;
+    color: black;
+    text-align: center;
+}
+
+.myworks>div img{
+    position: relative;
+    top: 20PX;
+    left: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myworks>div p{
+    position: relative;
+    top: 50px;
+
+    color: black;
+    text-align: center;
+}
+
+.myworks>div:hover{
+    scale: 1.2;
+    color: black;
+    background-color: #24a8aa;
+    filter: drop-shadow(2px 2px 40px #60ebec);
+}
+
+#myWork {
+    border: 5px solid white;
+    width: 250px;
+    height: 80px;
+    text-align: center;
+    align-content: center;
+    margin-top: 50px;
+    margin-left: 40%;
+}
+
+
 
 
 
