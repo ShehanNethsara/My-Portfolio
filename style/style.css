@@ -269,7 +269,113 @@ body{
     bottom: 500px;
 }
 
+/*.gallery{*/
+/*    position: relative;*/
+/*    height: 120vh;*/
+/*    display: flex;*/
+/*    padding: 0 10%;*/
+/*    gap: 15rem;*/
+/*}*/
 
+/*.gallery h1{*/
+/*    border: 3px solid white;*/
+/*    width: 250px;*/
+/*    height: 80px;*/
+/*    position: absolute;*/
+/*    text-align: center;*/
+/*    align-content: center;*/
+/*    font-size: 40px;*/
+/*    font-weight: 700;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    top: 0;*/
+
+/*    margin: auto;*/
+/*}*/
+
+
+#contact {
+    border: 5px solid white;
+    width: 250px;
+    height: 80px;
+    text-align: center;
+    align-content: center;
+    margin-top: 140px;
+    margin-left: 40%;
+}
+
+#msg{
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    left: 200px;
+}
+
+.contact>div img{
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #24A8AA;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #24A8AA;
+    text-decoration: none;
+}
+
+#msg p{
+    margin-left: 80px;
+    margin-top: -30px;
+    color: white;
+}
+
+form{
+    position: relative;
+    width: 350px;
+    height: 330px;
+    border: #24A8AA solid;
+    margin-left: 900px;
+    margin-top: 140px;
+    background: linear-gradient(90deg, transparent 5%, #24A8AA 100%);
+    border-radius: 30px;
+}
+
+form>div{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+form>div>input{
+    margin-top: 10px;
+}
+
+form>div>button{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 1px solid #ffffff80;
+    transition: 0.5s ease;
+    user-select: none;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+form>div>button:hover,
+:focus {
+    color: black;
+    background: #24A8AA;
+    border: 1px solid #24A8AA;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px #24A8AA, 0 0 20px #60ebec, 0 0 50px #24A8AA,
+    0 0 100px #008cff;
+}
 
 
 
