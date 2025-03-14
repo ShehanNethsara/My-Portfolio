@@ -149,7 +149,7 @@ body{
 .Service > div:hover{
     scale: 1.1;
     color: black;
-    background-color: cyan;
+    background-color: #00abf0;
     filter: drop-shadow(2px 2px 40px #60ebec);
 
 }
@@ -222,7 +222,7 @@ body{
 .myworks>div:hover{
     scale: 1.2;
     color: black;
-    background-color: #24a8aa;
+    background-color: #00abf0;
     filter: drop-shadow(2px 2px 40px #60ebec);
 }
 
