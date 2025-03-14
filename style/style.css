@@ -236,6 +236,39 @@ body{
     margin-left: 40%;
 }
 
+.skill{
+    position: relative;
+    height: 120vh;
+    display: flex;
+    padding: 0 10%;
+    gap: 15rem;
+}
+
+.skill h1{
+    border: 3px solid white;
+    width: 250px;
+    height: 80px;
+    position: absolute;
+    text-align: center;
+    align-content: center;
+    font-size: 40px;
+    font-weight: 700;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    margin: auto;
+}
+
+.skill>.skillimg{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    bottom: 500px;
+}
+
 
 
 
