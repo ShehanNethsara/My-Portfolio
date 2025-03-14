@@ -99,6 +99,78 @@ body{
     opacity: .8;
 }
 
+.Service{
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.Service > div{
+    border: solid white;
+    height: 250px;
+    width: 400px;
+    background-color:#081b29;
+    margin-left: 150px;
+    color: white;
+    font-size: 23px;
+    margin-top: 50px;
+    border-radius: 30px;
+}
+
+
+.Service>div:nth-child(1){
+    position: relative;
+    left: 30px;
+}
+
+.Service>div:nth-child(2){
+    position: relative;
+    left: -80px;
+}
+
+.Service>div:nth-child(3){
+    position: relative;
+    left: -200px;
+}
+
+
+
+.Service>div>h5{
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.Service>div>p{
+    margin-top: 20px;
+}
+
+.Service > div:hover{
+    scale: 1.1;
+    color: black;
+    background-color: cyan;
+    filter: drop-shadow(2px 2px 40px #60ebec);
+
+}
+
+.Service>div>h5:hover{
+    color: black;
+}
+
+
+
+
+
+#service {
+    border: 5px solid white;
+    width: 250px;
+    height: 80px;
+    text-align: center;
+    align-content: center;
+    margin-top: 50px;
+    margin-left: 40%;
+}
 
 
 
