@@ -25,16 +25,22 @@ body{
     z-index: 100;
 }
 .logo{
-    font-size:25px;
+    font-size:40px;
     color: #ededed;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 300;
+}
+.navbar{
+    width: 100vw;
+
 }
 .navbar a{
     font-size: 18px;
     color: #ededed;
     text-decoration: none;
     font-weight: 800;
+    position: relative;
+    left: 300px;
     margin-left: 50px;
     transition: .3s;
 }
@@ -42,6 +48,65 @@ body{
 .navbar a.active{
     color: #00abf0;
 }
+.about{
+    height: 100vh;
+    background: url("assets/image/pic7.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.about-content{
+    max-width: 800px;
+}
+.about-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.about-content h3{
+    font-size: 16px;
+    font-weight: 250;
+    color: #00abf0;
+}
+.about-content.p1{
+    font-size: 16px;
+    margin: 20px 0 40px;
+
+}
+.about-content h4{
+    font-size: 20px;
+}
+.about-content.p2{
+    font-size: 16px;
+}
+
+.profile-photo{
+    position: absolute;
+    top: 100px;
+    right: 150px;
+    width: 350px;
+    height: 250px;
+    background: transparent;
+    border-radius: 100%;
+
+
+
+}
+.profile-photo:hover{
+    background: #081b29;
+    opacity: .8;
+}
+
+
+
+
+
+
+
+
+
 
 
 
