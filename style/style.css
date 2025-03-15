@@ -1,0 +1,397 @@
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #081b29;
+    color: #ededed;
+
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size:40px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 300;
+}
+.navbar{
+    width: 100vw;
+
+}
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 800;
+    position: relative;
+    left: 300px;
+    margin-left: 50px;
+    transition: .3s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: #00abf0;
+}
+.about{
+    height: 100vh;
+    background: url("assets/image/pic7.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.about-content{
+    max-width: 800px;
+}
+.about-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.about-content h3{
+    font-size: 16px;
+    font-weight: 250;
+    color: #00abf0;
+}
+.about-content.p1{
+    font-size: 16px;
+    margin: 20px 0 40px;
+
+}
+.about-content h4{
+    font-size: 20px;
+}
+.about-content.p2{
+    font-size: 16px;
+}
+
+.profile-photo{
+    position: absolute;
+    top: 100px;
+    right: 150px;
+    width: 350px;
+    height: 250px;
+    background: transparent;
+    border-radius: 100%;
+
+
+
+}
+.profile-photo:hover{
+    background: #081b29;
+    opacity: .8;
+}
+
+.Service{
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.Service > div{
+    border: solid white;
+    height: 250px;
+    width: 400px;
+    background-color:#081b29;
+    margin-left: 150px;
+    color: white;
+    font-size: 23px;
+    margin-top: 50px;
+    border-radius: 30px;
+}
+
+
+.Service>div:nth-child(1){
+    position: relative;
+    left: 30px;
+}
+
+.Service>div:nth-child(2){
+    position: relative;
+    left: -80px;
+}
+
+.Service>div:nth-child(3){
+    position: relative;
+    left: -200px;
+}
+
+
+
+.Service>div>h5{
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.Service>div>p{
+    margin-top: 20px;
+}
+
+.Service > div:hover{
+    scale: 1.1;
+    color: black;
+    background-color: #00abf0;
+    filter: drop-shadow(2px 2px 40px #60ebec);
+
+}
+
+.Service>div>h5:hover{
+    color: black;
+}
+
+
+
+
+
+#service {
+    border: 5px solid white;
+    width: 250px;
+    height: 80px;
+    text-align: center;
+    align-content: center;
+    margin-top: 50px;
+    margin-left: 40%;
+}
+
+.myworks{
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+
+
+}
+
+.myworks>div{
+
+    width: 20vw;
+    height: 350px;
+
+    background: white;
+    border-radius: 20px;
+
+    margin: 32px 32px 32px 32px;
+
+
+}
+
+.myworks>div h3{
+    position: relative;
+    top: 10px;
+    color: black;
+    text-align: center;
+}
+
+.myworks>div img{
+    position: relative;
+    top: 20PX;
+    left: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myworks>div p{
+    position: relative;
+    top: 50px;
+
+    color: black;
+    text-align: center;
+}
+
+.myworks>div:hover{
+    scale: 1.2;
+    color: black;
+    background-color: #00abf0;
+    filter: drop-shadow(2px 2px 40px #60ebec);
+}
+
+#myWork {
+    border: 5px solid white;
+    width: 250px;
+    height: 80px;
+    text-align: center;
+    align-content: center;
+    margin-top: 50px;
+    margin-left: 40%;
+}
+
+.skill{
+    position: relative;
+    height: 120vh;
+    display: flex;
+    padding: 0 10%;
+    gap: 15rem;
+}
+
+.skill h1{
+    border: 3px solid white;
+    width: 250px;
+    height: 80px;
+    position: absolute;
+    text-align: center;
+    align-content: center;
+    font-size: 40px;
+    font-weight: 700;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    margin: auto;
+}
+
+.skill>.skillimg{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    bottom: 500px;
+}
+
+/*.gallery{*/
+/*    position: relative;*/
+/*    height: 120vh;*/
+/*    display: flex;*/
+/*    padding: 0 10%;*/
+/*    gap: 15rem;*/
+/*}*/
+
+/*.gallery h1{*/
+/*    border: 3px solid white;*/
+/*    width: 250px;*/
+/*    height: 80px;*/
+/*    position: absolute;*/
+/*    text-align: center;*/
+/*    align-content: center;*/
+/*    font-size: 40px;*/
+/*    font-weight: 700;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    top: 0;*/
+
+/*    margin: auto;*/
+/*}*/
+
+
+#contact {
+    border: 5px solid white;
+    width: 250px;
+    height: 80px;
+    text-align: center;
+    align-content: center;
+    margin-top: 140px;
+    margin-left: 40%;
+}
+
+#msg{
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    left: 200px;
+}
+
+.contact>div img{
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #24A8AA;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #24A8AA;
+    text-decoration: none;
+}
+
+#msg p{
+    margin-left: 80px;
+    margin-top: -30px;
+    color: white;
+}
+
+form{
+    position: relative;
+    width: 350px;
+    height: 330px;
+    border: #24A8AA solid;
+    margin-left: 900px;
+    margin-top: 140px;
+    background: linear-gradient(90deg, transparent 5%, #24A8AA 100%);
+    border-radius: 30px;
+}
+
+form>div{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+form>div>input{
+    margin-top: 10px;
+}
+
+form>div>button{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid #ffffff80;
+    transition: 0.5s ease;
+    user-select: none;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+form>div>button:hover,
+:focus {
+    color: black;
+    background: #24A8AA;
+    border: 1px solid #24A8AA;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px #24A8AA, 0 0 20px #60ebec, 0 0 50px #24A8AA,
+    0 0 100px #008cff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
