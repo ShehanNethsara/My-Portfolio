@@ -359,7 +359,6 @@ form>div>button{
     text-shadow: none;
     background: transparent;
     cursor: pointer;
-    box-shadow: transparent;
     border: 1px solid #ffffff80;
     transition: 0.5s ease;
     user-select: none;
