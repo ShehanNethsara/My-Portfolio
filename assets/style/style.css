@@ -1,5 +1,5 @@
 
-{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -50,7 +50,7 @@ body{
 }
 .about{
     height: 100vh;
-    background: url("assets/image/pic7.png") no-repeat;
+    /*background: url("../image/pic7.png") no-repeat;*/
     background-size: cover;
     background-position: center;
     display: flex;
@@ -333,10 +333,10 @@ form{
     position: relative;
     width: 350px;
     height: 330px;
-    border: #24A8AA solid;
+    border: #ffffff solid;
     margin-left: 900px;
     margin-top: 140px;
-    background: linear-gradient(90deg, transparent 5%, #24A8AA 100%);
+    background: linear-gradient(90deg, transparent 5%, #dfdfdf 100%);
     border-radius: 30px;
 }
 
