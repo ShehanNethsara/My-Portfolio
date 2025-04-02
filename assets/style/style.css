@@ -19,11 +19,12 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background-color: #1c1c22;
+    backdrop-filter: blur(10px);
     display:flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 1000;
 }
 .logo{
     position: relative;
@@ -168,22 +169,59 @@ body{
     }
 }
 
-.profile-photo{
+.profile-photo.img{
     position: absolute;
     top: 230px;
     right: 130px;
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     background: transparent;
     border-radius: 100%;
 
 
 
 }
-.profile-photo:hover{
-    background: #081b29;
-    opacity: .8;
+
+
+/* About section code*/
+
+.aboutMe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: #1c1c22;
 }
+
+.about-img img{
+    width: 25vw;
+    border: 2px solid #00ff99;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #00ff99;
+    cursor: pointer;
+    transition: 0.4s ease;
+    margin-right: 5rem;
+    margin-top: 8rem;
+
+}
+.s{
+    color: #00ff99;
+}
+
+.heading{
+    font-size: 6rem;
+    margin: 2rem;
+    text-align: center;
+}
+.aboutMe-content{
+    padding: 0 6rem;
+
+}
+.aboutMe-content p{
+    font-size: 1.3rem;
+    margin: 2rem 0 3rem;
+}
+
 
 .Service{
     position: relative;
@@ -454,12 +492,11 @@ form>div>button{
 
 form>div>button:hover,
 :focus {
-    color: black;
-    background: #24A8AA;
-    border: 1px solid #24A8AA;
-    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
-    box-shadow: 0 0 5px #24A8AA, 0 0 20px #60ebec, 0 0 50px #24A8AA,
-    0 0 100px #008cff;
+    color: #00ff99;
+    background: #1c1c22;
+    border: 2px solid #1c1c22;
+    text-shadow: 0 0 5px #1c1c22, 0 0 10px #1c1c22, 0 0 20px #1c1c22;
+    box-shadow: 0 0 5px , 0 0 10px #00e68a, 0 0 20px #00e68a, 0 0 10px #00e68a;
 }
 
 
