@@ -7,8 +7,9 @@
 }
 
 body{
-    background: black;
+    background: #1c1c22 ;
     color: #ededed;
+  /*background:#00ff99;*/
 
 }
 
@@ -17,7 +18,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 15%;
+    padding: 20px 10%;
     background: transparent;
     display:flex;
     justify-content: space-between;
@@ -25,61 +26,146 @@ body{
     z-index: 100;
 }
 .logo{
-    font-size:40px;
-    color: whitesmoke;
+    position: relative;
+    font-size:25px;
+    color: #00ff99;
     text-decoration: none;
-    font-weight: 300;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: sliderRight 1s ease forwards;
 }
 .navbar{
     width: 100vw;
 
 }
 .navbar a{
+    display: inline-block;
     font-size: 18px;
     color: #ededed;
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 500;
     position: relative;
-    left: 300px;
-    margin-left: 50px;
+    left: 400px;
+    margin-left: 35px;
     transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
-.navbar a:hover,
-.navbar a.active{
-    color: #00abf0;
+.navbar a:hover{
+    color: #00ff99;
 }
 .about{
+    position: relative;
+    width: 100%;
+    justify-content: space-between ;
     height: 100vh;
-    /*background: url("../image/pic7.png") no-repeat;*/
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
-    padding: 0 10%;
+    padding: 70px 10% 0 ;
 }
 .about-content{
-    max-width: 800px;
+    max-width: 600px;
+}
+.about-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: sliderBottom 1s ease forwards ;
+    animation-delay: .7s;
+    /*line-height: 1.2;*/
+}
+.about-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+.about-content h3 span{
+    color: #00ff99;
 }
 .about-content h1{
     font-size: 56px;
     font-weight: 700;
-    line-height: 1.2;
+    color: #00ff99;
+    margin: -3px 0;
+    opacity: 0;
+    animation: sliderRight 1s ease forwards;
+    animation-delay: 1s;
+    /*color: #00abf0;*/
 }
-.about-content h3{
-    font-size: 16px;
-    font-weight: 250;
-    color: #00abf0;
+.about-content p{
+    font-size: 20px;
+    opacity: 0;
+    animation: sliderLeft 1s ease forwards;
+    animation-delay: 1s;
 }
-.about-content.p1{
-    font-size: 16px;
-    margin: 20px 0 40px;
+.about-content2 a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border:2px solid #00ff99 ;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #00ff99;
+    text-decoration: none;
+    transition: .5s ease forwards;
+    opacity: 0;
+    animation: sliderLeft 1s ease forwards ;
+    animation-delay: calc(.2s * var(--i)) ;
+    margin: 30px 15px 30px 0;
+}
+.about-content2 a:hover{
+    background: #00ff99;
+    color: #081b29;
 
 }
-.about-content h4{
-    font-size: 20px;
+@keyframes sliderRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
 }
-.about-content.p2{
-    font-size: 16px;
+
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes sliderBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes sliderLeft {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
 
 .profile-photo{
