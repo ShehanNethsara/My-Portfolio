@@ -276,6 +276,14 @@ body{
 }
 
 /* skill code section */
+h2.skill{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+.skill span{
+    color: #00ff99;
+}
 
 .section{
     display: flex;
@@ -409,8 +417,8 @@ body{
     width: 0;
     height: 0;
     border: 7px solid transparent;
-    border-bottom-width: 0px;
-    border-right-width: 0px;
+    border-bottom-width: 0;
+    border-right-width: 0;
     border-top-color: #00ff99;
     top: -10px;
     right: 0;
@@ -427,15 +435,102 @@ body{
 .radial-bars{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.radial-bars .radial-bar{
+    width: 50%;
     height: 170px;
     margin-bottom: 10px;
     position: relative;
 }
-.radial-bars .radial-bar{
 
+.radial-bars .radial-bar svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+.radial-bars.radial-bar .progress-line{
+    stroke-width: 10;
+    stop-color: black;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+}
+@keyframes animate-bar {
+    100%{
+        stroke-dashoffset: -1 ;
+    }
+}
+.path{
+    stroke-width: 10;
+    stroke: #00ff99;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+.path-1{
+    animation: animate-path1 1s 1s linear forwards;
+}
+.path-2{
+    animation: animate-path2 1s 1s linear forwards;
+}
+.path-3{
+    animation: animate-path3 1s 1s linear forwards;
+}
+.path-4{
+    animation: animate-path4 1s 1s linear forwards;
 }
 
-
+@keyframes animate-path1 {
+    100%{
+        stroke-dashoffset: 50;;
+    }
+}
+@keyframes animate-path1 {
+    100%{
+        stroke-dashoffset: 175;;
+    }
+}
+@keyframes animate-path1 {
+    100%{
+        stroke-dashoffset: 125;;
+    }
+}
+@keyframes animate-path1 {
+    100%{
+        stroke-dashoffset: 75;;
+    }
+}
+.radial-bar .percentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5 1s linear forwards;
+    opacity: 0;
+}
+.radial-bar.text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translate(-50px);
+    font-size: 17px;
+    font-weight: 500;
+    animation: shoeText 0.5s 1s linear forwards;
+    opacity: 0;
+}
 
 
 
