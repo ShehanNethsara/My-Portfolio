@@ -882,12 +882,5 @@ h2.skill{
     color: #00ff99;
 }
 
-/*form>div>button:hover,*/
-:focus {
-    color: #00ff99;
-    background: #1c1c22;
-    border: 2px solid #1c1c22;
-    text-shadow: 0 0 5px #1c1c22, 0 0 10px #1c1c22, 0 0 20px #1c1c22;
-    box-shadow: 0 0 5px , 0 0 10px #00e68a, 0 0 20px #00e68a, 0 0 10px #00e68a;
-}
+
 

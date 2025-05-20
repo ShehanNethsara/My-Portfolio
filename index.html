@@ -1,47 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="assets/lib/fontawesome-free-6.7.2-web/css/all.min.css">
     <link rel="stylesheet" href="assets/lib/normalize.css">
 </head>
+
 <body>
+<script src="assets/js/main.js"></script>
 
 <header class="header">
-    <a href="#" class="logo" ><b>Shehan</b></a>
+    <a href="#" class="logo"><b>Shehan</b></a>
 
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+        <span class="sr-only">Menu</span>
+    </button>
 
-    <nav class="navbar">
-
-        <a href="#home" style="--i:1"class="active"><b>HOME</b></a>
-        <a href="#a" style="--i:2"><b>ABOUT ME</b></a>
-        <a href="#service" style="--i:3"><b>SERVICE</b></a>
-        <a href="#Skill" style="--i:5"><b>SKILL</b></a>
-        <a href="#mywork" style="--i:4"><b>MY WORK</b></a>
-        <a href="#contact" style="--i:6"><b>CONTACT</b></a>
+    <nav class="navbar" id="primary-navigation">
+        <ul class="navbar__list">
+            <li class="navbar__item">
+                <a href="#home" class="navbar__link active" style="--i:1"><b>HOME</b></a>
+            </li>
+            <li class="navbar__item">
+                <a href="#a" class="navbar__link" style="--i:2"><b>ABOUT ME</b></a>
+            </li>
+            <li class="navbar__item">
+                <a href="#service" class="navbar__link" style="--i:3"><b>SERVICE</b></a>
+            </li>
+            <li class="navbar__item">
+                <a href="#Skill" class="navbar__link" style="--i:5"><b>SKILL</b></a>
+            </li>
+            <li class="navbar__item">
+                <a href="#mywork" class="navbar__link" style="--i:4"><b>MY WORK</b></a>
+            </li>
+            <li class="navbar__item">
+                <a href="#contact" class="navbar__link" style="--i:6"><b>CONTACT</b></a>
+            </li>
+        </ul>
     </nav>
-
-
 </header>
+
 
 <main>
 
     <section class="about" id="home">
         <div class="about-content">
 
-            <h3 >Hello,It's Me</h3>
+            <h3>Hello,It's Me</h3>
             <h1>Shehan Nethsara</h1>
             <h3>And I'm a </h3>
             <p>I am a software engineering student and a passionate video editor, combining technical skills with creativity to develop innovative digital solutions and engaging visual content.</p>
-<!--            <h3>Graphic Designer | Front-End Developer | UI/UX Designer | Video Editor | Content creator</h3>-->
+            <!--            <h3>Graphic Designer | Front-End Developer | UI/UX Designer | Video Editor | Content creator</h3>-->
             <div class="about-content2">
 
                 <a href="https://www.facebook.com/share/18xhSPaywg/" style="--i:7"><i class="fa-brands fa-facebook"></i></a>
                 <a href="a" style="--i:8"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.tiktok.com/@mr.sherik?_r=1&_d=dif3mibi0mifh3&sec_uid=MS4wLjABAAAAaDsGb_xUHW4nGcSoIra04ZWMBj3JOqXhvdMOVI1k3H_cPvE_L78paxvzPF2mzeWk&share_author_id=6964659851394941957&sharer_language=en&source=h5_m&u_code=diidj74ge2ldij&timestamp=1743614977&user_id=6964659851394941957&sec_user_id=MS4wLjABAAAAaDsGb_xUHW4nGcSoIra04ZWMBj3JOqXhvdMOVI1k3H_cPvE_L78paxvzPF2mzeWk&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7288159066848184066&share_link_id=27202d47-5a3d-479e-9061-7676433135cf&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb0229&social_share_type=5 "style="--i:9"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.tiktok.com/@mr.sherik?_r=1&_d=dif3mibi0mifh3&sec_uid=MS4wLjABAAAAaDsGb_xUHW4nGcSoIra04ZWMBj3JOqXhvdMOVI1k3H_cPvE_L78paxvzPF2mzeWk&share_author_id=6964659851394941957&sharer_language=en&source=h5_m&u_code=diidj74ge2ldij&timestamp=1743614977&user_id=6964659851394941957&sec_user_id=MS4wLjABAAAAaDsGb_xUHW4nGcSoIra04ZWMBj3JOqXhvdMOVI1k3H_cPvE_L78paxvzPF2mzeWk&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7288159066848184066&share_link_id=27202d47-5a3d-479e-9061-7676433135cf&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb0229&social_share_type=5 "
+                   style="--i:9"><i class="fa-brands fa-tiktok"></i></a>
                 <a href="https://www.instagram.com/" style="--i:10"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
@@ -70,10 +90,13 @@
     <section class="aboutMe" id="a">
         <div class="aboutMe-content">
             <h2 class="heading">About <span class="s">Me</span></h2>
-            <p>I am a passionate and creative professional specializing in Graphic Design, Front-End Development, UI/UX Design, Video Editing, and Content Creation. With a strong blend of technical expertise and artistic vision, I bring ideas to life through engaging visuals, user-friendly interfaces, and high-quality multimedia content.</p>
-            <p>As a Graphic Designer, I create eye-catching designs that effectively communicate messages and build strong brand identities. My Front-End Development skills allow me to craft responsive, aesthetically pleasing, and interactive websites that enhance user experiences. With expertise in UI/UX Design, I focus on intuitive layouts, seamless navigation, and user-centered design principles to create meaningful digital interactions.</p>
+            <p>I am a passionate and creative professional specializing in Graphic Design, Front-End Development, UI/UX Design, Video Editing, and Content Creation. With a strong blend of technical expertise and artistic vision, I bring ideas to life
+                through engaging visuals, user-friendly interfaces, and high-quality multimedia content.</p>
+            <p>As a Graphic Designer, I create eye-catching designs that effectively communicate messages and build strong brand identities. My Front-End Development skills allow me to craft responsive, aesthetically pleasing, and interactive websites
+                that enhance user experiences. With expertise in UI/UX Design, I focus on intuitive layouts, seamless navigation, and user-centered design principles to create meaningful digital interactions.</p>
             <p>Beyond design, I am also a Video Editor and Content Creator, producing compelling videos and digital content that captivate audiences across various platforms. I enjoy storytelling through visuals, motion graphics, and engaging edits.</p>
-            <p>With a continuous drive for innovation, I stay updated on the latest design and development trends, ensuring my work remains fresh, modern, and impactful. My goal is to create digital experiences that inspire, inform, and connect with people worldwide.</p>
+            <p>With a continuous drive for innovation, I stay updated on the latest design and development trends, ensuring my work remains fresh, modern, and impactful. My goal is to create digital experiences that inspire, inform, and connect with
+                people worldwide.</p>
         </div>
 
         <div class="about-img">
@@ -127,94 +150,94 @@
         <div class="container1">
             <h1 class="heading1">Technical Skills</h1>
             <div class="Technical-bar">
-            <div class="bar"><i class="fa-brands fa-html5" style="color: #c95d2e;"></i>
-                <div class="info">
-                    <span>HTML</span>
+                <div class="bar"><i class="fa-brands fa-html5" style="color: #c95d2e;"></i>
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line html">
+                        <span></span>
+                    </div>
                 </div>
-                <div class="progress-line html">
-                    <span></span>
-                </div>
-            </div>
 
-            <div class="bar"><i class="fa-brands fa-css3-alt" style="color: #147bbc;"></i>
-                <div class="info">
-                    <span>CSS</span>
+                <div class="bar"><i class="fa-brands fa-css3-alt" style="color: #147bbc;"></i>
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-line css">
+                        <span></span>
+                    </div>
                 </div>
-                <div class="progress-line css">
-                    <span></span>
-                </div>
-            </div>
 
-            <div class="bar"><i class="fa-brands fa-js" style="color: #b0bc1e;"></i>
-                <div class="info">
-                    <span>JAVA SCRIPT</span>
+                <div class="bar"><i class="fa-brands fa-js" style="color: #b0bc1e;"></i>
+                    <div class="info">
+                        <span>JAVA SCRIPT</span>
+                    </div>
+                    <div class="progress-line js">
+                        <span></span>
+                    </div>
                 </div>
-                <div class="progress-line js">
-                    <span></span>
-                </div>
-            </div>
 
-            <div class="bar"><i class="fa-brands fa-java" style="color: #00ff99;"></i>
-                <div class="info">
-                    <span>JAVA</span>
+                <div class="bar"><i class="fa-brands fa-java" style="color: #00ff99;"></i>
+                    <div class="info">
+                        <span>JAVA</span>
+                    </div>
+                    <div class="progress-line java">
+                        <span></span>
+                    </div>
                 </div>
-                <div class="progress-line java">
-                    <span></span>
-                </div>
-            </div>
 
-            <div class="bar"><img src="assets/image/icons8-mysql-50.png" alt="sql">
-                <div class="info">
-                    <span>MY SQL</span>
+                <div class="bar"><img src="assets/image/icons8-mysql-50.png" alt="sql">
+                    <div class="info">
+                        <span>MY SQL</span>
+                    </div>
+                    <div class="progress-line sql">
+                        <span></span>
+                    </div>
                 </div>
-                <div class="progress-line sql">
-                    <span></span>
-                </div>
-            </div>
 
-            <div class="bar"><img src="assets/image/adobe-premiere-pro-50.png" alt="adobe">
-                <div class="info">
-                    <span>ADOBE PREMIERE PRO</span>
+                <div class="bar"><img src="assets/image/adobe-premiere-pro-50.png" alt="adobe">
+                    <div class="info">
+                        <span>ADOBE PREMIERE PRO</span>
+                    </div>
+                    <div class="progress-line pro">
+                        <span></span>
+                    </div>
                 </div>
-                <div class="progress-line pro">
-                    <span></span>
-                </div>
-            </div>
 
-            <div class="bar"><img src="assets/image/icons8-photoshop.gif" alt="ps">
-                <div class="info">
-                    <span>ADOBE PHOTOSHOP</span>
+                <div class="bar"><img src="assets/image/icons8-photoshop.gif" alt="ps">
+                    <div class="info">
+                        <span>ADOBE PHOTOSHOP</span>
+                    </div>
+                    <div class="progress-line photoshop">
+                        <span></span>
+                    </div>
                 </div>
-                <div class="progress-line photoshop">
-                    <span></span>
-                </div>
-            </div>
 
-            <div class="bar"><img src="assets/image/figma-50.png" alt="figma">
-                <div class="info">
-                    <span>FIGMA</span>
+                <div class="bar"><img src="assets/image/figma-50.png" alt="figma">
+                    <div class="info">
+                        <span>FIGMA</span>
+                    </div>
+                    <div class="progress-line figma">
+                        <span></span>
+                    </div>
                 </div>
-                <div class="progress-line figma">
-                    <span></span>
-                </div>
-            </div>
             </div>
         </div>
 
         <div class="container1">
             <h1 class="heading1">Professional Skills</h1>
             <div class="radial-bars">
-                 <div class="radial-bar">
-                     <svg x="0px" y="0px"  viewBox="0 0 200 200">
-                         <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                         <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                     </svg>
-                     <div class="percentage">90%</div>
-                     <div class="text">Creativity</div>
-                 </div>
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">90%</div>
+                    <div class="text">Creativity</div>
+                </div>
 
                 <div class="radial-bar">
-                    <svg x="0px" y="0px"  viewBox="0 0 200 200">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
                         <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
                         <circle class="path path-1" cx="100" cy="100" r="80"></circle>
                     </svg>
@@ -223,7 +246,7 @@
                 </div>
 
                 <div class="radial-bar">
-                    <svg x="0px" y="0px"  viewBox="0 0 200 200">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
                         <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
                         <circle class="path path-1" cx="100" cy="100" r="80"></circle>
                     </svg>
@@ -232,7 +255,7 @@
                 </div>
 
                 <div class="radial-bar">
-                    <svg x="0px" y="0px"  viewBox="0 0 200 200">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
                         <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
                         <circle class="path path-1" cx="100" cy="100" r="80"></circle>
                     </svg>
@@ -241,7 +264,7 @@
                 </div>
 
                 <div class="radial-bar">
-                    <svg x="0px" y="0px"  viewBox="0 0 200 200">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
                         <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
                         <circle class="path path-1" cx="100" cy="100" r="80"></circle>
                     </svg>
@@ -250,7 +273,7 @@
                 </div>
 
                 <div class="radial-bar">
-                    <svg x="0px" y="0px"  viewBox="0 0 200 200">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
                         <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
                         <circle class="path path-1" cx="100" cy="100" r="80"></circle>
                     </svg>
@@ -273,8 +296,8 @@
                             <h5>Tic Tac Toe Game</h5>
                             <p>Tic-tac-toe is a game in which two players take turns in drawing either an ` O' or an ` X' in one square of a grid consisting of nine squares. The winner is the first player to get three of the same symbols in a row</p>
 
-<!--                            <a href="#"><i class="fa-light fa-arrow-up-right-from-square" style="color: #00ff99;"></i></a>-->
-                            
+                            <!--                            <a href="#"><i class="fa-light fa-arrow-up-right-from-square" style="color: #00ff99;"></i></a>-->
+
                         </div>
                     </div>
 
@@ -285,7 +308,7 @@
                             <p>It has features like customer manage, supplier manage, order manage and send notification.</p>
 
 
-<!--                            <a href="#"><i class="fa-light fa-arrow-up-right-from-square" style="color: #00ff99;"></i></a>-->
+                            <!--                            <a href="#"><i class="fa-light fa-arrow-up-right-from-square" style="color: #00ff99;"></i></a>-->
 
                         </div>
                     </div>
@@ -296,7 +319,7 @@
                             <h5>Car Wash System</h5>
                             <p>It has features like customer manage, item manage,booking manage, order manage and payment manage.</p>
 
-<!--                            <a href="#"><i class="fa-light fa-arrow-up-right-from-square" style="color: #00ff99;"></i></a>-->
+                            <!--                            <a href="#"><i class="fa-light fa-arrow-up-right-from-square" style="color: #00ff99;"></i></a>-->
 
                         </div>
                     </div>
@@ -307,7 +330,7 @@
                             <h5>Phone selling and Management System</h5>
                             <p>It has features like customer manage, service manage,booking manage and send notification.</p>
 
-<!--                            <a href="#"><i class="fa-light fa-arrow-up-right-from-square" style="color: #00ff99;"></i></a>-->
+                            <!--                            <a href="#"><i class="fa-light fa-arrow-up-right-from-square" style="color: #00ff99;"></i></a>-->
 
                         </div>
                     </div>
@@ -316,16 +339,95 @@
             </div>
         </div>
     </section>
+    <div class="Service" id="Assignment">
+        <div class="container">
+            <h2 class="sheading">My <span>Assignment</span></h2>
+
+            <div class="slideshow-container">
+                <!-- Slides -->
+                <div class="slide-wrapper">
+                    <div class="Assignment-slide active">
+                        <div class="Assignment-list">
+                            <a href="https://www.ucodex.org" target="_blank" class="Assignment-item">
+                                <i class="fa-solid fa-book" style="color: #00ff99;"></i>
+                                <h4>Assignment 1</h4>
+                            </a>
+                            <a href="https://www.ucodex.org" target="_blank" class="Assignment-item">
+                                <i class="fa-solid fa-book" style="color: #00ff99;"></i>
+                                <h4>Assignment 2</h4>
+                            </a>
+                            <a href="https://www.ucodex.org" target="_blank" class="Assignment-item">
+                                <i class="fa-solid fa-book" style="color: #00ff99;"></i>
+                                <h4>Assignment 3</h4>
+                            </a>
+                            <a href="https://www.ucodex.org" target="_blank" class="Assignment-item">
+                                <i class="fa-solid fa-book" style="color: #00ff99;"></i>
+                                <h4>Assignment 4</h4>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="Assignment-slide">
+                        <div class="Assignment-list">
+                            <a href="https://www.ucodex.org" target="_blank" class="Assignment-item">
+                                <i class="fa-solid fa-book" style="color: #00ff99;"></i>
+                                <h4>Assignment 5</h4>
+                            </a>
+                            <a href="https://www.ucodex.org" target="_blank" class="Assignment-item">
+                                <i class="fa-solid fa-book" style="color: #00ff99;"></i>
+                                <h4>Assignment 6</h4>
+                            </a>
+                            <a href="https://www.ucodex.org" target="_blank" class="Assignment-item">
+                                <i class="fa-solid fa-book" style="color: #00ff99;"></i>
+                                <h4>Assignment 7</h4>
+                            </a>
+                            <a href="https://www.ucodex.org" target="_blank" class="Assignment-item">
+                                <i class="fa-solid fa-book" style="color: #00ff99;"></i>
+                                <h4>Assignment 8</h4>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="Assignment-slide">
+                        <div class="Assignment-list">
+                            <a href="https://www.ucodex.org" target="_blank" class="Assignment-item">
+                                <i class="fa-solid fa-book" style="color: #00ff99;"></i>
+                                <h4>Assignment 9</h4>
+                            </a>
+                            <a href="https://www.ucodex.org" target="_blank" class="Assignment-item">
+                                <i class="fa-solid fa-book" style="color: #00ff99;"></i>
+                                <h4>Assignment 10</h4>
+                            </a>
+                            <a href="https://www.ucodex.org" target="_blank" class="Assignment-item">
+                                <i class="fa-solid fa-book" style="color: #00ff99;"></i>
+                                <h4>Assignment 11</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation arrows -->
+                <a class="prev" onclick="moveSlide(-1)">❮</a>
+                <a class="next" onclick="moveSlide(1)">❯</a>
+            </div>
+        </div>
+    </div>
+
+    <style>
+
+    </style>
+
 
     <section class="contact" id="contact">
         <div class="contact-text">
             <h2>Contact <span>Me</span></h2>
             <h4>Let's work Together</h4>
-            <p>Get in touch with me! Whether you have a project in mind, need assistance, or just want to connect, I'd love to hear from you. Feel free to reach out via the contact form below or through my email and social media channels. I'm always open to collaboration and new opportunities. Looking forward to our conversation!</p>
+            <p>Get in touch with me! Whether you have a project in mind, need assistance, or just want to connect, I'd love to hear from you. Feel free to reach out via the contact form below or through my email and social media channels. I'm always
+                open to collaboration and new opportunities. Looking forward to our conversation!</p>
 
             <div class="contact-list">
                 <li><i class="fa-solid fa-envelope"></i>shehan.nethsara2003@gmail.com</li>
-                <li> <i class="fa-solid fa-square-phone"></i>+94 770556601</li>
+                <zli> <i class="fa-solid fa-square-phone"></i>+94 779556601</zli>
             </div>
             <div class="contact-icon">
                 <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -366,4 +468,5 @@
 
 
 </body>
+
 </html>
